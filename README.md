@@ -18,9 +18,6 @@ A standalone starter for building an **addon** for a FoliaTemplate-based host pl
    | | Where it looks | Set up by |
    |---|---|---|
    | 1 | `gpr.user` / `gpr.token` in `~/.gradle/gradle.properties` | you, manually |
-   | 2 | `GITHUB_TOKEN` / `GH_TOKEN` env var | CI |
-   | 3 | `gh auth token` | `gh auth login` |
-   | 4 | Git's credential helper | cloning/signing in over HTTPS — **including from IntelliJ** |
 
    Rows 3–4 mean that if your IDE can already talk to GitHub, the build picks up that token with zero configuration. Check what it sees:
    ```bash
