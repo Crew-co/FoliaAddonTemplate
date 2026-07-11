@@ -1,0 +1,15 @@
+# The host reads this from your jar root to discover the addon.
+name: MyAddon
+version: 1.0.0
+main: com.example.myaddon.MyAddon
+
+# Must match the host's ADDON_API_VERSION, or the host refuses to load the addon
+# (better a clear message now than a NoSuchMethodError later).
+api-version: 1
+
+authors: [ YourName ]
+description: A Folia addon built on the FoliaTemplate addon API.
+
+# Other addons that must be enabled before this one. The host topologically
+# sorts by this, and skips your addon if a listed dependency is missing.
+# depends: [ SomeOtherAddon ]
